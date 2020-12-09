@@ -53,11 +53,11 @@ class Tech
         
     }
     
-    public function view_student_by_student_id($id){
+    public function view_tech($id){
        if(isset($id)){
-       $student_id= mysqli_real_escape_string($this->conn,trim($id));
+       $member_id= mysqli_real_escape_string($this->conn,trim($id));
       
-       $sql="Select * from students where student_id='$student_id'";
+       $sql="Select * from member where member_id='$member_id'";
         
        $result=  $this->conn->query($sql);
      
@@ -67,24 +67,21 @@ class Tech
     }
     
     
-    public function update_student_info($post_data=array()){
-       if(isset($post_data['update_student'])&& isset($post_data['id'])){
+    public function update_tech_info($post_data=array()){
+       if(isset($post_data['update_tech'])&& isset($post_data['id'])){
            
-       $student_name= mysqli_real_escape_string($this->conn,trim($post_data['student_name']));
-       $email_address= mysqli_real_escape_string($this->conn,trim($post_data['email_address']));
-       $gender= mysqli_real_escape_string($this->conn,trim($post_data['gender']));
-       $contact= mysqli_real_escape_string($this->conn,trim($post_data['contact']));
-       $country= mysqli_real_escape_string($this->conn,trim($post_data['country']));
-       $student_id= mysqli_real_escape_string($this->conn,trim($post_data['id']));
+       $member_name_lastname= mysqli_real_escape_string($this->conn,trim($post_data['member_name_lastname']));
+       $member_level= mysqli_real_escape_string($this->conn,trim($post_data['member_level']));
+       $member_id= mysqli_real_escape_string($this->conn,trim($post_data['id']));
 
-       $sql="UPDATE students SET student_name='$student_name',email_address='$email_address',contact='$contact',country='$country',gender='$gender' WHERE student_id =$student_id";
+       $sql="UPDATE member SET member_name_lastname='$member_name_lastname', member_level='$member_level' WHERE member_id =$member_id";
      
         $result=  $this->conn->query($sql);
         
            if($result){
-               $_SESSION['message']="Successfully Updated Student Info";
+               $_SESSION['message']="Successfully Updated ";
            }
-       unset($post_data['update_student']);
+       unset($post_data['update_tech']);
        }   
     }
     

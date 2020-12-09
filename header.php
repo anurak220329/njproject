@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" >
     <head>
-        <title>PHP CRUD</title>
+        <title>nj system</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="assets/style.css">
 
     </head>
     <body >
@@ -28,6 +28,7 @@
                     <ul class="nav navbar-nav">
                           <li> <img src="./assets/images/ce.png" alt="CE" class="tlogo"> </li>
                         <li class="active"><a href="index.php">Home</a></li>
+                       <li class="logout"><a href="logout.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ออกจากระบบ</a></li>
                     </ul>
 
                 </div>

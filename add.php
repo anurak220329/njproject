@@ -14,11 +14,15 @@ if (isset($_POST['create'])) {
                 <label for="name">ชื่อ-นามสกุล:</label>
                 <input type="text" name="member_name_lastname" id="member_name_lastname" class="form-control" required maxlength="50">
             </div>
-            <div class="form-group">
-                <label for="level">ระดับ:</label>
-                <input type="text" class="form-control" name="member_level" id="member_level" required maxlength="50">
-            </div>
-          
+            <label for="cars">ระดับ:</label>
+            <div  class="form-group" >
+            <select id="member_level" name="member_level" >
+  <option id="member_level" name="member_level"  value="นายช่างรังวัดอาวุโส">นายช่างรังวัดอาวุโส</option>
+  <option id="member_level" name="member_level" value="นายช่างรังวัดชำนาญงาน">นายช่างรังวัดชำนาญงาน</option>
+  <option id="member_level" name="member_level" value="นายช่างรังวัดปฎิบัติงาน">นายช่างรังวัดปฎิบัติงาน</option>
+  
+</select>
+          </div>
           
             <input type="submit" class="button button-green  pull-right" name="create" value="Submit"/>
         </form> 
